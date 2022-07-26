@@ -86,4 +86,4 @@ let toRoman = function(numer){
 }
 return romanNum; 
 }
-console.log(toRoman(num))
+document.querySelector('h1').textContent=toRoman(num)
