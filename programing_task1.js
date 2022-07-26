@@ -86,4 +86,9 @@ let toRoman = function(numer){
 }
 return romanNum; 
 }
-document.querySelector('h1').textContent=toRoman(num)
+if(num>0 && num<3999){
+    document.querySelector('h1').textContent=toRoman(num)
+}
+else{
+    alert('Enter proper number')
+}
