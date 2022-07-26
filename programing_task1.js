@@ -1,14 +1,5 @@
 let num = prompt('enter your value');
-let i1='I';
-let i5 = 'V';
-let i10 = 'X';
-let i50 = 'l';
-let i100 = 'C';
-let i500 = 'D';
-let i1000 = 'M';
 let romanNum;
-
-let subs;
 let arrnum = [
         {num:1,type:'I'},
         {num:5,type:'V'},
@@ -22,10 +13,7 @@ let arrnum = [
         {num:500,type:'D'},
         {num:400,type:'CD'},
         {num:1000,type:'M'},
-        {num:900,type:'CM'},
-                ]
-
-
+        {num:900,type:'CM'},]
 
 let toRoman = function(numer){
     
@@ -72,10 +60,7 @@ let toRoman = function(numer){
     else if(numer>=1000){
         closest=1000
     }
-
     for( let el of arrnum){ 
-
-
         if(numer>0){
 
             if(el.num==closest){
@@ -97,12 +82,8 @@ let toRoman = function(numer){
         else{
             
             break
-        }
-       
-       
+        }     
 }
 return romanNum; 
-
-
 }
 console.log(toRoman(num))
